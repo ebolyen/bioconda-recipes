@@ -1,0 +1,29 @@
+package:
+  name: papara
+  version: "2.5"
+
+build:
+  number: 1
+
+source:
+  url: https://github.com/gavinmdouglas/papara_nt/archive/2.5.tar.gz
+  md5: e61b6cc215e25fc688b6215f6993ac20 
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - libboost
+  run:
+
+test:
+  commands:
+    - papara > /dev/null
+
+about:
+  home: https://github.com/sim82/papara_nt
+  license: GPL3
+  summary: Aligning short reads to reference alignments and trees
+
+extra:
+  identifiers:
+    - doi:https://doi.org/10.1093/bioinformatics/btr320
