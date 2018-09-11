@@ -1,0 +1,29 @@
+package:
+  name: gappa
+  version: "0.0.0_dev"
+
+build:
+  number: 1
+
+source:
+  url: https://github.com/gavinmdouglas/gappa/archive/v0.0.0-dev.tar.gz
+  md5: 1c47c6a5972ec77a1a00f90d7d06fdf3
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+
+  run:
+
+test:
+  commands:
+    - gappa --help > /dev/null
+
+about:
+  home: https://github.com/lczech/gappa
+  license: GNU General Public License v3.0 
+  summary: Genesis Applications for Phylogenetic Placement Analysis
+
+extra:
+  identifiers:
+    - doi:https://doi.org/10.1101/299792
